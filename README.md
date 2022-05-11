@@ -10,8 +10,8 @@ In this repo, you can:
 1. Explore latent space in notebooks\StyleGAN_SokolovAV.ipynb
 2. Explore ruDALL-E text generation in notebooks\ruDalle.ipynb
 
-OR
+<img src="https://media.giphy.com/media/CHyxN9bNkMc3S/giphy.gif" width="500" class='left'>
 
 ```.bash
-#Run streamlit version with everything in one place!
+#AND Run streamlit version with everything in one place!
 streamlit run app.py
