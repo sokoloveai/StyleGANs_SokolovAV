@@ -14,5 +14,5 @@ In this repository, you can:
 <img src="https://media.giphy.com/media/CHyxN9bNkMc3S/giphy.gif" width="500" class='left'>
 
 ```.bash
-#AND Run streamlit version with everything in one place!
+#Run streamlit version with everything in one place!
 streamlit run app.py
