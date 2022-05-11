@@ -1,4 +1,4 @@
-# StyleGANs_SokolovAV
-Master's HSE project «Using StyleGANs in Recomendation models in e-commerce» by Sokolov Alexander Vladislavovich
+# StyleGANs in Recomendation models in e-commerce
+Master's HSE project by Sokolov Alexander Vladislavovich
 
 Scientific director: Prosvetov Artem Vladimirovich
