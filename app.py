@@ -82,7 +82,7 @@ def generate_interpolated_images(
 
 
 def load_model(file_name: str, device: torch.device) -> nn.Module:
-    path = './models/stylegan_human_v2_1024.pkl'
+    path = r'stylegan_human_v2_1024.pkl'
     with open(path, 'rb') as f:
         model = pickle.load(f)['G_ema']
     model.eval()
@@ -94,7 +94,7 @@ def load_model(file_name: str, device: torch.device) -> nn.Module:
     return model
 
 def load_model1(file_name: str, device: torch.device) -> nn.Module:
-    path = './models/network-snapshot-000560.pkl'
+    path = r'models/network-snapshot-000560.pkl'
     with open(path, 'rb') as f:
         model = pickle.load(f)['G_ema']
     model.eval()
@@ -157,7 +157,7 @@ def main():
         args = parse_args()
         device = torch.device(args.device)
 
-        model = load_model('models/stylegan_human_v2_1024.pkl', device)
+        model = load_model('stylegan_human_v2_1024.pkl', device)
 
         func = functools.partial(generate_image, model=model, device=device)
         func = functools.update_wrapper(func, generate_image)
@@ -174,7 +174,7 @@ def main():
         args = parse_args()
         device = torch.device(args.device)
 
-        model = load_model('models/stylegan_human_v2_1024.pkl', device)
+        model = load_model('stylegan_human_v2_1024.pkl', device)
         func = functools.partial(generate_interpolated_images,
                                  model=model,
                                  device=device)
@@ -200,7 +200,7 @@ def main():
         args = parse_args()
         device = torch.device(args.device)
 
-        model = load_model1('models/network-snapshot-000560.pkl', device)
+        model = load_model1('network-snapshot-000560.pkl', device)
 
         func = functools.partial(generate_image, model=model, device=device)
         func = functools.update_wrapper(func, generate_image)
@@ -217,7 +217,7 @@ def main():
         args = parse_args()
         device = torch.device(args.device)
 
-        model = load_model1('models/network-snapshot-000560.pkl', device)
+        model = load_model1('network-snapshot-000560.pkl', device)
         func = functools.partial(generate_interpolated_images,
                                  model=model,
                                  device=device)
