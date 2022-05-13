@@ -157,7 +157,7 @@ def main():
         args = parse_args()
         device = torch.device(args.device)
 
-        model = load_model('models/stylegan_human_v2_1024.pkl', device)
+        model = load_model('stylegan_human_v2_1024.pkl', device)
 
         func = functools.partial(generate_image, model=model, device=device)
         func = functools.update_wrapper(func, generate_image)
