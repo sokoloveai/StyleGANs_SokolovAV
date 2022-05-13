@@ -13,6 +13,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 import streamlit as st
+from googleDriveFileDownloader import googleDriveFileDownloader
 
 st.set_page_config(
      page_title="SokolovAVapp",
@@ -80,7 +81,7 @@ def generate_interpolated_images(
 
 
 def load_model(file_name: str, device: torch.device) -> nn.Module:
-    path = r'C:\Users\onlym\GAN_DIPLOMA\stylegan_human_v2_1024.pkl'
+    path = gdownloader.downloadFile("https://drive.google.com/uc?id=1diKmPBRwvFirBBOxc2HFqQLRQiNHiTOR=download")
     with open(path, 'rb') as f:
         model = pickle.load(f)['G_ema']
     model.eval()
@@ -92,7 +93,7 @@ def load_model(file_name: str, device: torch.device) -> nn.Module:
     return model
 
 def load_model1(file_name: str, device: torch.device) -> nn.Module:
-    path = r'C:\Users\onlym\GAN_DIPLOMA\stylegan3\network-snapshot-000560.pkl'
+    path = gdownloader.downloadFile("https://drive.google.com/uc?id=1oUliPTEDW_gcO_EReoaP5TBuVubguYXN=download")
     with open(path, 'rb') as f:
         model = pickle.load(f)['G_ema']
     model.eval()
