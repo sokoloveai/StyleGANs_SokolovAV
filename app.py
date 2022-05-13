@@ -15,6 +15,8 @@ import torch.nn as nn
 import streamlit as st
 from googleDriveFileDownloader import googleDriveFileDownloader
 
+gdownloader = googleDriveFileDownloader()
+
 st.set_page_config(
      page_title="SokolovAVapp",
      page_icon="🧊",
