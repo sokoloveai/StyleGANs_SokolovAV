@@ -94,7 +94,7 @@ def load_model(file_name: str, device: torch.device) -> nn.Module:
     return model
 
 def load_model1(file_name: str, device: torch.device) -> nn.Module:
-    path = r'models/network-snapshot-000560.pkl'
+    path = r'network-snapshot-000560.pkl'
     with open(path, 'rb') as f:
         model = pickle.load(f)['G_ema']
     model.eval()
