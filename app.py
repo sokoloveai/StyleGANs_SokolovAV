@@ -82,7 +82,7 @@ def generate_interpolated_images(
 
 
 def load_model(file_name: str, device: torch.device) -> nn.Module:
-    path = './models/stylegan_human_v2_1024.pkl'
+    path = 'models/stylegan_human_v2_1024.pkl'
     with open(path, 'rb') as f:
         model = pickle.load(f)['G_ema']
     model.eval()
@@ -174,7 +174,7 @@ def main():
         args = parse_args()
         device = torch.device(args.device)
 
-        model = load_model('./models/stylegan_human_v2_1024.pkl', device)
+        model = load_model('models/stylegan_human_v2_1024.pkl', device)
         func = functools.partial(generate_interpolated_images,
                                  model=model,
                                  device=device)
