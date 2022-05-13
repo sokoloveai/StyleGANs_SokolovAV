@@ -81,7 +81,7 @@ def generate_interpolated_images(
 
 
 def load_model(file_name: str, device: torch.device) -> nn.Module:
-    path = gdownloader.downloadFile("https://drive.google.com/uc?id=1diKmPBRwvFirBBOxc2HFqQLRQiNHiTOR=download")
+    path = gdownloader.downloadFile('https://drive.google.com/uc?id=1oUliPTEDW_gcO_EReoaP5TBuVubguYXN&export=download')
     with open(path, 'rb') as f:
         model = pickle.load(f)['G_ema']
     model.eval()
@@ -93,7 +93,7 @@ def load_model(file_name: str, device: torch.device) -> nn.Module:
     return model
 
 def load_model1(file_name: str, device: torch.device) -> nn.Module:
-    path = gdownloader.downloadFile("https://drive.google.com/uc?id=1oUliPTEDW_gcO_EReoaP5TBuVubguYXN=download")
+    path = gdownloader.downloadFile('https://drive.google.com/uc?id=1diKmPBRwvFirBBOxc2HFqQLRQiNHiTOR&export=download')
     with open(path, 'rb') as f:
         model = pickle.load(f)['G_ema']
     model.eval()
