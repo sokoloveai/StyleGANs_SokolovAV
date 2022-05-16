@@ -1,7 +1,7 @@
 ## StyleGANs in Recomendation models in e-commerce
 Master's HSE project by **Sokolov Alexander Vladislavovich**
 
-Scientific director: **Prosvetov Artem Vladimirovich**
+Scientific director: **Prosvetov Artem Vladimirovich, Candidate of Physical and Mathematical Sciences, Head of Behavioral Technologies at Rydtech, Yandex**
 
 ## How to use?
 
