@@ -16,7 +16,8 @@ In this repository, you can:
 
 ```.bash
 #Run streamlit version with everything in one place!
-streamlit run app.py '''
+streamlit run app.py 
+```
+Examples of generated models:
+![image](https://user-images.githubusercontent.com/59219077/230595156-404796bd-1bc7-4f4b-8390-fb8404b3b0b5.png)
 
-Examples:
-![image](https://user-images.githubusercontent.com/59219077/230595051-f5fde2be-58bf-4eed-8c5d-307f3615f713.png)
