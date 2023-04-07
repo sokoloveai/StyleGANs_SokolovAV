@@ -18,6 +18,10 @@ In this repository, you can:
 #Run streamlit version with everything in one place!
 streamlit run app.py 
 ```
-Examples of generated models:
+## Examples of generated models:
 ![image](https://user-images.githubusercontent.com/59219077/230595156-404796bd-1bc7-4f4b-8390-fb8404b3b0b5.png)
+![image](https://user-images.githubusercontent.com/59219077/230595223-e649e972-4865-4402-971a-3090a829ea72.png)
+
+### Bonus
+![image](https://user-images.githubusercontent.com/59219077/230595254-31066945-7b65-41b0-a0c7-ec9e4b830f2f.png)
 
